@@ -4,7 +4,7 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="abc" author="miguelhpm">
+    <changeSet id="2022.PI3.SP1-1" author="miguelhpm">
         <comment>Agregando Campo Nickname</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
                  path="src/main/resources/script/2022/PI3/SP1/script1.sql"/>

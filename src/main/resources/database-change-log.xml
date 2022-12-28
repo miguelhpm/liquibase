@@ -4,6 +4,6 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <includeAll path="src/main/resources/script/"/>
+    <includeAll path="src/main/resources/script" filter="org.mglhpm.liquibase.SqlFilter" errorIfMissingOrEmpty="false"/>
 
 </databaseChangeLog>
