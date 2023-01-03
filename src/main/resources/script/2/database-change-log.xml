@@ -4,34 +4,38 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="2022.PI3.SP1-1" author="miguelhpm" context="pro,cal,tst" labels="persons">
+    <changeSet id="2022.PI3.SP1-1" author="miguelhpm" context="pro,cal,tst,lcl" labels="persons">
         <comment>Agregando Campo Nickname</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/2022/PI3/SP1/script1.sql"/>
+                 path="src/main/resources/script/2/script1.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/2022/PI3/SP1/rollback1.sql"/>
+                     path="src/main/resources/script/2/rollback1.sql"/>
         </rollback>
     </changeSet>
 
-    <changeSet id="2022.PI3.SP1-2" author="miguelhpm" context="pro,cal,tst" labels="persons">
+    <changeSet id="2022.PI3.SP1-2" author="miguelhpm" context="pro,cal,tst,lcl" labels="persons">
         <comment>Agregando Campo Birth Date</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/2022/PI3/SP1/script2.sql"/>
+                 path="src/main/resources/script/2/script2.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/2022/PI3/SP1/rollback2.sql"/>
+                     path="src/main/resources/script/2/rollback2.sql"/>
         </rollback>
     </changeSet>
 
-    <changeSet id="2022.PI3.SP1-3" author="miguelhpm" context="pro,cal,tst" labels="parameters">
+    <changeSet id="2022.PI3.SP1-3" author="miguelhpm" context="pro,cal,tst,lcl" labels="parameters">
         <comment>Creando tabla Parametro</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/2022/PI3/SP1/script3.sql"/>
+                 path="src/main/resources/script/2/script3.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/2022/PI3/SP1/rollback3.sql"/>
+                     path="src/main/resources/script/2/rollback3.sql"/>
         </rollback>
+    </changeSet>
+
+    <changeSet id="2" author="miguelhpm">
+        <tagDatabase tag="2" />
     </changeSet>
 
 </databaseChangeLog>

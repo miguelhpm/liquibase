@@ -4,14 +4,18 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="init.01" author="miguelhpm" context="pro,cal,tst" labels="init">
+    <changeSet id="init.01" author="miguelhpm" context="pro,cal,tst,lcl" labels="init">
         <comment>Creacion de tabla personas</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/00.init/head.sql"/>
+                 path="src/main/resources/script/1/head.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/00.init/rollback.sql"/>
+                     path="src/main/resources/script/1/rollback.sql"/>
         </rollback>
+    </changeSet>
+
+    <changeSet id="1" author="miguelhpm">
+        <tagDatabase tag="1" />
     </changeSet>
 
 </databaseChangeLog>
