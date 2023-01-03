@@ -7,40 +7,40 @@
     <changeSet id="2022.PI3.SP2-1" author="miguelhpm" context="lcl" labels="parameter-val" >
         <comment>Parametro de Local</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/3/script-local.sql"/>
+                 path="src/main/resources/script/2022/PI3/SP2/script-local.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/3/rollback-all.sql"/>
+                     path="src/main/resources/script/2022/PI3/SP2/rollback-all.sql"/>
         </rollback>
     </changeSet>
 
     <changeSet id="2022.PI3.SP2-1" author="miguelhpm" context="tst" labels="parameter-val">
         <comment>Parametro de TEST</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/3/script-test.sql"/>
+                 path="src/main/resources/script/2022/PI3/SP2/script-test.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/3/rollback-all.sql"/>
+                     path="src/main/resources/script/2022/PI3/SP2/rollback-all.sql"/>
         </rollback>
     </changeSet>
 
     <changeSet id="2022.PI3.SP2-1" author="miguelhpm" context="cal" labels="parameter-val">
         <comment>Parametro de Calidad</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/3/script-calidad.sql"/>
+                 path="src/main/resources/script/2022/PI3/SP2/script-calidad.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/3/rollback-all.sql"/>
+                     path="src/main/resources/script/2022/PI3/SP2/rollback-all.sql"/>
         </rollback>
     </changeSet>
 
     <changeSet id="2022.PI3.SP2-1" author="miguelhpm" context="pro" labels="parameter-val">
         <comment>Parametro de produccion</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/3/script-calidad.sql"/>
+                 path="src/main/resources/script/2022/PI3/SP2/script-calidad.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/3/rollback-all.sql"/>
+                     path="src/main/resources/script/2022/PI3/SP2/rollback-all.sql"/>
         </rollback>
     </changeSet>
 
