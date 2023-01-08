@@ -4,7 +4,7 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="2022.PI4.SP2-1" author="miguelhpm" context="cal,tst,lcl" labels="ambiente-zp">
+    <changeSet id="2022.PI4.SP2-1" author="miguelhpm" context="pro,cal,tst,lcl" labels="ambiente-zp">
         <comment>Parametro Ambiente ZP</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
                  path="src/main/resources/script/2022/PI4/SP2/script-parametro-ambiente.sql"/>
@@ -12,6 +12,10 @@
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
                      path="src/main/resources/script/2022/PI4/SP2/rollback-parametro-ambiente.sql"/>
         </rollback>
+    </changeSet>
+
+    <changeSet id="5" author="miguelhpm" context="pro" >
+        <tagDatabase tag="5" />
     </changeSet>
 
 </databaseChangeLog>

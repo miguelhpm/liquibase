@@ -15,7 +15,7 @@
     </changeSet>
 
     <changeSet id="4" author="miguelhpm" context="pro" >
-        <tagDatabase tag="3" />
+        <tagDatabase tag="4" />
     </changeSet>
 
 </databaseChangeLog>

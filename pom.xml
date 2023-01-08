@@ -42,6 +42,8 @@
         <configuration>
           <propertyFile>src/main/resources/liquibase.properties</propertyFile>
           <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+          <migrationSqlOutputFile>target/liquibase/migrate.sql</migrationSqlOutputFile>
+          <outputFile>target/liquibase/rollback.sql</outputFile>
         </configuration>
         <dependencies>
           <dependency>
