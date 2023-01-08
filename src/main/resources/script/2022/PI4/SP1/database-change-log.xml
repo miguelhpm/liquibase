@@ -4,18 +4,18 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="init.01" author="miguelhpm" context="pro,cal,tst,lcl" labels="init">
-        <comment>Creacion de tabla personas</comment>
+    <changeSet id="2022.PI4.SP1-1" author="miguelhpm" context="pro,cal,tst,lcl" labels="auditoria">
+        <comment>Auditoria de la tabla Personas</comment>
         <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                 path="src/main/resources/script/0-init/head.sql"/>
+                 path="src/main/resources/script/2022/PI4/SP1/script-persons-auditoria.sql"/>
         <rollback>
             <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
-                     path="src/main/resources/script/0-init/rollback.sql"/>
+                     path="src/main/resources/script/2022/PI4/SP1/rollback-persons-auditoria.sql"/>
         </rollback>
     </changeSet>
 
-    <changeSet id="1" author="miguelhpm">
-        <tagDatabase tag="1" />
+    <changeSet id="4" author="miguelhpm" context="pro" >
+        <tagDatabase tag="3" />
     </changeSet>
 
 </databaseChangeLog>

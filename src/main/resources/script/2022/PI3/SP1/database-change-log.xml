@@ -34,7 +34,7 @@
         </rollback>
     </changeSet>
 
-    <changeSet id="2" author="miguelhpm">
+    <changeSet id="2" author="miguelhpm" context="pro">
         <tagDatabase tag="2" />
     </changeSet>
 
