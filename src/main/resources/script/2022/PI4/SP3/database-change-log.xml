@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="2022.PI4.SP3-squat-1" author="miguelhpm" context="lcl,tst" labels="SDATOOL-1234">
+        <comment>Crear tabla Operaciones</comment>
+        <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
+                 path="src/main/resources/script/2022/PI4/SP3/create-table-operarations.sql"/>
+        <rollback>
+            <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
+                     path="src/main/resources/script/2022/PI4/SP3/rollback-create-table-operarations.sql"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="2022.PI4.SP3-squat-2" author="miguelhpm" context="lcl" labels="SDATOOL-1234" >
+        <comment>Fix tabla Operaciones</comment>
+        <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
+                 path="src/main/resources/script/2022/PI4/SP3/fix-table-operarations.sql"/>
+        <rollback>
+            <sqlFile encoding="utf8" splitStatements="true" stripComments="true"
+                     path="src/main/resources/script/2022/PI4/SP3/rollback-fix-table-operarations.sql"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
